@@ -9,6 +9,7 @@ export interface OpenSource {
   language: string;
   technologies: string[];
   category: string;
+  module: string;
   icon?: string;
 }
 
@@ -17,6 +18,13 @@ export interface Category {
   name: string;
   description: string;
   icon?: string;
+}
+
+export interface Module {
+  id: string;
+  name: string;
+  description: string;
+  category: string;
 }
 
 export type CategoryId =
