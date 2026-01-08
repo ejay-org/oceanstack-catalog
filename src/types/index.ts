@@ -9,6 +9,7 @@ export interface OpenSource {
   language: string;
   technologies: string[];
   category: string;
+  icon?: string;
 }
 
 export interface Category {
@@ -19,13 +20,8 @@ export interface Category {
 }
 
 export type CategoryId =
-  | "monitoring"
-  | "log-management"
-  | "infrastructure"
-  | "automation"
-  | "security"
-  | "backup"
-  | "network"
-  | "database"
-  | "container"
-  | "cicd";
+  | "itam"
+  | "itom"
+  | "itsm"
+  | "analysis"
+  | "ai-automation";
