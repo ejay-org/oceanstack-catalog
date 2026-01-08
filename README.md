@@ -159,7 +159,7 @@ stackcatalog/
   language: "개발 언어",
   technologies: ["기술1", "기술2"],
   category: "itam", // itam, itom, itsm, analysis, ai-automation
-  icon: "Database" // Lucide React 아이콘 이름
+  icon: "Database" // Lucide React 아이콘 이름 또는 이미지 URL
 }
 ```
 
@@ -171,7 +171,16 @@ stackcatalog/
 - `ai-automation` - AI/자동화
 
 ### 아이콘 선택
-[Lucide React](https://lucide.dev) 아이콘을 사용합니다. 예시:
+
+두 가지 방식으로 아이콘을 지정할 수 있습니다:
+
+#### 1. Lucide React 아이콘 (문자열)
+[Lucide React](https://lucide.dev) 아이콘 이름을 문자열로 지정:
+```typescript
+icon: "Database"  // Lucide 아이콘 이름
+```
+
+예시:
 - `Database` - 데이터베이스 관련
 - `Activity`, `LineChart` - 모니터링
 - `Container` - 컨테이너
@@ -179,6 +188,23 @@ stackcatalog/
 - `GitBranch`, `GitMerge` - CI/CD
 - `Workflow` - 워크플로우
 - `Search` - 검색/분석
+
+#### 2. 이미지 URL
+웹 URL 또는 로컬 경로를 지정:
+```typescript
+icon: "https://example.com/logo.png"  // 웹 URL
+icon: "/icons/mylogo.svg"             // public 폴더의 로컬 경로
+```
+
+예시:
+- Prometheus: `"https://raw.githubusercontent.com/cncf/artwork/master/projects/prometheus/icon/color/prometheus-icon-color.png"`
+- Kubernetes: `"https://raw.githubusercontent.com/cncf/artwork/master/projects/kubernetes/icon/color/kubernetes-icon-color.png"`
+- 로컬 아이콘: `public/icons/` 폴더에 이미지를 넣고 `"/icons/filename.png"` 형식으로 사용
+
+**권장 이미지 형식:**
+- SVG (확장성이 좋음)
+- PNG (투명 배경 지원)
+- 크기: 256x256px 이상
 
 ## 라이선스
 

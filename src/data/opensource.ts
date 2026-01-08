@@ -93,7 +93,7 @@ export const openSourceProjects: OpenSource[] = [
     language: "Go",
     technologies: ["Time Series DB", "Monitoring", "Alerting"],
     category: "itom",
-    icon: "Activity",
+    icon: "https://raw.githubusercontent.com/cncf/artwork/master/projects/prometheus/icon/color/prometheus-icon-color.png",
   },
   {
     id: "grafana",
@@ -106,7 +106,7 @@ export const openSourceProjects: OpenSource[] = [
     language: "TypeScript",
     technologies: ["Visualization", "Dashboards", "Analytics"],
     category: "itom",
-    icon: "LineChart",
+    icon: "https://raw.githubusercontent.com/grafana/grafana/main/public/img/grafana_icon.svg",
   },
   {
     id: "zabbix",
@@ -171,7 +171,7 @@ export const openSourceProjects: OpenSource[] = [
     language: "Go",
     technologies: ["Container Orchestration", "Cloud Native", "Microservices"],
     category: "itom",
-    icon: "Container",
+    icon: "https://raw.githubusercontent.com/cncf/artwork/master/projects/kubernetes/icon/color/kubernetes-icon-color.png",
   },
   {
     id: "docker",
@@ -184,7 +184,7 @@ export const openSourceProjects: OpenSource[] = [
     language: "Go",
     technologies: ["Containers", "Virtualization"],
     category: "itom",
-    icon: "Container",
+    icon: "https://www.docker.com/wp-content/uploads/2023/08/logo-guide-logos-1.svg",
   },
   {
     id: "rancher",

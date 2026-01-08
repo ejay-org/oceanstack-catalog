@@ -9,14 +9,21 @@ interface OpenSourceCardProps {
 }
 
 export function OpenSourceCard({ project }: OpenSourceCardProps) {
+  // 아이콘이 URL인지 확인
+  const isIconUrl = (icon?: string): boolean => {
+    if (!icon) return false;
+    return icon.startsWith('http://') || icon.startsWith('https://') || icon.startsWith('/');
+  };
+
   // 동적으로 아이콘 가져오기
   const getIcon = (iconName?: string): LucideIcon => {
-    if (!iconName) return LucideIcons.Box;
+    if (!iconName || isIconUrl(iconName)) return LucideIcons.Box;
     const Icon = (LucideIcons as any)[iconName];
     return Icon || LucideIcons.Box;
   };
 
   const ProjectIcon = getIcon(project.icon);
+  const iconUrl = isIconUrl(project.icon) ? project.icon : null;
 
   return (
     <Card className="h-full hover:shadow-lg transition-shadow duration-200">
@@ -24,8 +31,16 @@ export function OpenSourceCard({ project }: OpenSourceCardProps) {
         <div className="flex items-start gap-2">
           {/* 솔루션 아이콘 */}
           <div className="flex-shrink-0">
-            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-              <ProjectIcon className="h-5 w-5 text-primary" />
+            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden">
+              {iconUrl ? (
+                <img
+                  src={iconUrl}
+                  alt={project.name}
+                  className="w-6 h-6 object-contain"
+                />
+              ) : (
+                <ProjectIcon className="h-5 w-5 text-primary" />
+              )}
             </div>
           </div>
 
