@@ -8,10 +8,12 @@ MSP(Managed Service Provider) 통합운영플랫폼 구축을 위한 오픈소�
 
 ## 주요 기능
 
-- **영역별 분류**: 모니터링, 로그 관리, 인프라 관리 등 10개 영역으로 오픈소스 분류
-- **상세 정보 표시**: 각 오픈소스의 이름, 라이선스, GitHub Stars, 시작 년도, 개발 언어, 기반 기술 정보 제공
+- **IT 관리 영역별 분류**: ITAM, ITOM, ITSM, Analysis, AI/Automation 5개 핵심 영역으로 구분
+- **솔루션 아이콘**: 각 오픈소스별 시각적 아이콘 표시
+- **상세 정보 표시**: 이름, 라이선스, GitHub Stars, 시작 년도, 개발 언어, 기반 기술 정보 제공
 - **반응형 디자인**: 모바일, 태블릿, 데스크톱 모든 화면 크기 지원
 - **빠른 네비게이션**: 상단 네비게이션을 통한 영역별 빠른 이동
+- **50개 이상의 엄선된 오픈소스**: MSP 운영에 필요한 핵심 도구들
 
 ## 기술 스택
 
@@ -23,16 +25,42 @@ MSP(Managed Service Provider) 통합운영플랫폼 구축을 위한 오픈소�
 
 ## 카테고리
 
-1. **모니터링** - Prometheus, Grafana, Zabbix, Nagios
-2. **로그 관리** - Elasticsearch, Logstash, Fluentd, Graylog
-3. **인프라 관리** - Terraform, Ansible, OpenTofu
-4. **자동화** - Rundeck, StackStorm
-5. **보안** - Wazuh, OSSEC, Suricata
-6. **백업 및 복구** - Restic, Bacula, Duplicati
-7. **네트워크 관리** - NetBox, OpenNMS
-8. **데이터베이스 관리** - pgAdmin, phpMyAdmin, DBeaver
-9. **컨테이너 오케스트레이션** - Kubernetes, Docker, Rancher, Portainer
-10. **CI/CD** - Jenkins, GitLab, Argo CD, Tekton
+### 1. ITAM (IT Asset Management)
+IT 자산 관리 - 하드웨어, 소프트웨어, 네트워크 자산 추적 및 관리
+- **NetBox** - IP 주소 및 데이터센터 인프라 관리 (IPAM & DCIM)
+- **Snipe-IT** - IT 자산 관리 시스템
+- **Ralph** - 데이터센터 및 백오피스 자산 관리
+- **pgAdmin, phpMyAdmin, DBeaver** - 데이터베이스 관리 도구
+
+### 2. ITOM (IT Operations Management)
+IT 운영 관리 - 인프라 모니터링, 성능 관리, 용량 계획
+- **모니터링**: Prometheus, Grafana, Zabbix, Nagios
+- **인프라**: Terraform, OpenTofu, Kubernetes, Docker, Rancher, Portainer
+- **네트워크**: OpenNMS
+- **보안**: Wazuh, OSSEC, Suricata
+- **백업**: Restic, Bacula, Duplicati
+
+### 3. ITSM (IT Service Management)
+IT 서비스 관리 - 인시던트, 문제, 변경, 서비스 요청 관리
+- **Rundeck** - 운영 자동화 및 런북 관리
+- **StackStorm** - 이벤트 기반 자동화 플랫폼
+- **osTicket** - 헬프데스크 티켓 시스템
+- **GLPI** - IT 자산 관리 및 헬프데스크
+- **iTop** - ITIL 기반 서비스 관리
+
+### 4. Analysis
+데이터 분석 및 시각화 - 로그 분석, 메트릭 시각화, 보고서 생성
+- **Elasticsearch, Logstash, Kibana** - ELK Stack
+- **Fluentd** - 로그 수집 및 처리
+- **Graylog** - 로그 관리 및 분석
+- **Metabase, Apache Superset** - 비즈니스 인텔리전스
+
+### 5. AI/Automation
+지능형 자동화 - CI/CD, 워크플로우 자동화, AIOps
+- **Ansible** - IT 자동화 및 구성 관리
+- **Jenkins, GitLab** - CI/CD 플랫폼
+- **Argo CD, Tekton** - Kubernetes용 GitOps/CI/CD
+- **Apache Airflow, n8n** - 워크플로우 자동화
 
 ## 시작하기
 
@@ -98,9 +126,27 @@ stackcatalog/
   startYear: 2020,
   language: "개발 언어",
   technologies: ["기술1", "기술2"],
-  category: "카테고리ID"
+  category: "itam", // itam, itom, itsm, analysis, ai-automation
+  icon: "Database" // Lucide React 아이콘 이름
 }
 ```
+
+### 카테고리 ID
+- `itam` - IT 자산 관리
+- `itom` - IT 운영 관리
+- `itsm` - IT 서비스 관리
+- `analysis` - 데이터 분석
+- `ai-automation` - AI/자동화
+
+### 아이콘 선택
+[Lucide React](https://lucide.dev) 아이콘을 사용합니다. 예시:
+- `Database` - 데이터베이스 관련
+- `Activity`, `LineChart` - 모니터링
+- `Container` - 컨테이너
+- `Shield` - 보안
+- `GitBranch`, `GitMerge` - CI/CD
+- `Workflow` - 워크플로우
+- `Search` - 검색/분석
 
 ## 라이선스
 
