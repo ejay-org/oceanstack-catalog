@@ -87,6 +87,38 @@ npm start
 
 개발 서버가 실행되면 [http://localhost:3000](http://localhost:3000)에서 확인할 수 있습니다.
 
+## GitHub Pages 배포
+
+이 프로젝트는 GitHub Pages에 자동으로 배포되도록 설정되어 있습니다.
+
+### 자동 배포
+
+main 브랜치에 푸시하면 GitHub Actions가 자동으로 빌드하고 배포합니다.
+
+배포 URL: `https://<username>.github.io/stackcatalog`
+
+### 배포 설정
+
+1. **GitHub 리포지토리 설정**
+   - Settings → Pages로 이동
+   - Source를 "GitHub Actions"로 선택
+
+2. **자동 배포**
+   - main 브랜치에 푸시하면 자동으로 `.github/workflows/deploy.yml`이 실행됩니다
+   - Actions 탭에서 배포 진행 상황을 확인할 수 있습니다
+
+3. **수동 배포**
+   - Actions 탭 → "Deploy to GitHub Pages" → "Run workflow" 클릭
+
+### 로컬 빌드 테스트
+
+```bash
+# 프로덕션 빌드 (정적 파일 생성)
+NODE_ENV=production npm run build
+
+# out 디렉토리에 정적 파일이 생성됩니다
+```
+
 ## 프로젝트 구조
 
 ```
