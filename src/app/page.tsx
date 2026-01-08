@@ -16,9 +16,9 @@ export default function Home() {
       </header>
 
       {/* 네비게이션 */}
-      <nav className="border-b bg-muted/40">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex flex-wrap gap-4">
+      <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-[120px] z-10">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <div className="flex flex-wrap gap-3">
             {categories.map((category) => {
               const count = openSourceProjects.filter(
                 (project) => project.category === category.id

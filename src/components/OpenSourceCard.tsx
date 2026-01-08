@@ -20,17 +20,17 @@ export function OpenSourceCard({ project }: OpenSourceCardProps) {
 
   return (
     <Card className="h-full hover:shadow-lg transition-shadow duration-200">
-      <CardHeader>
-        <div className="flex items-start justify-between gap-3">
+      <CardHeader className="pb-3">
+        <div className="flex items-start gap-2">
           {/* 솔루션 아이콘 */}
           <div className="flex-shrink-0">
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-              <ProjectIcon className="h-6 w-6 text-primary" />
+            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+              <ProjectIcon className="h-5 w-5 text-primary" />
             </div>
           </div>
 
           <div className="flex-1 min-w-0">
-            <CardTitle className="text-xl mb-2 flex items-center gap-2">
+            <CardTitle className="text-lg mb-1 flex items-center gap-2">
               <span className="truncate">{project.name}</span>
               <a
                 href={project.githubUrl}
@@ -38,30 +38,30 @@ export function OpenSourceCard({ project }: OpenSourceCardProps) {
                 rel="noopener noreferrer"
                 className="flex-shrink-0 text-muted-foreground hover:text-foreground transition-colors"
               >
-                <LucideIcons.ExternalLink className="h-4 w-4" />
+                <LucideIcons.ExternalLink className="h-3.5 w-3.5" />
               </a>
             </CardTitle>
-            <CardDescription className="line-clamp-2">
+            <CardDescription className="line-clamp-2 text-xs">
               {project.description}
             </CardDescription>
           </div>
         </div>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-2.5 pt-0">
         {/* 통계 정보 */}
-        <div className="flex items-center gap-4 text-sm text-muted-foreground">
+        <div className="flex items-center gap-3 text-xs text-muted-foreground">
           <div className="flex items-center gap-1">
-            <LucideIcons.Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            <LucideIcons.Star className="h-3.5 w-3.5 fill-yellow-400 text-yellow-400" />
             <span className="font-medium">
               {project.stars.toLocaleString()}
             </span>
           </div>
           <div className="flex items-center gap-1">
-            <LucideIcons.Calendar className="h-4 w-4" />
+            <LucideIcons.Calendar className="h-3.5 w-3.5" />
             <span>{project.startYear}</span>
           </div>
           <div className="flex items-center gap-1">
-            <LucideIcons.Code className="h-4 w-4" />
+            <LucideIcons.Code className="h-3.5 w-3.5" />
             <span>{project.language}</span>
           </div>
         </div>
@@ -74,7 +74,7 @@ export function OpenSourceCard({ project }: OpenSourceCardProps) {
         </div>
 
         {/* 기술 태그 */}
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1.5">
           {project.technologies.map((tech) => (
             <Badge key={tech} variant="secondary" className="text-xs">
               {tech}
