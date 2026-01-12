@@ -16,6 +16,11 @@ export interface Category {
   name: string;
   description: string;
   icon?: string;
+  color?: {
+    gradient: string;
+    border: string;
+    text: string;
+  };
 }
 
 export interface Module {

@@ -67,9 +67,15 @@ export default function MappingPage() {
             return (
               <section key={category.id} id={category.id}>
                 {/* 카테고리 색상 바 */}
-                <div className="mb-6 -mx-6 px-6 py-4 bg-gradient-to-r from-primary/20 to-primary/5 border-l-4 border-primary">
-                  <h3 className="text-xl font-bold mb-1">{category.name}</h3>
-                  <p className="text-sm text-muted-foreground">{category.description}</p>
+                <div className={`mb-6 -mx-6 px-6 py-3 bg-gradient-to-r ${category.color?.gradient || 'from-primary/20 to-primary/5'} border-l-4 ${category.color?.border || 'border-primary'}`}>
+                  <div className="flex items-center justify-between gap-4">
+                    <h3 className={`text-xl font-bold ${category.color?.text || 'text-foreground'}`}>
+                      {category.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {category.description}
+                    </p>
+                  </div>
                 </div>
 
                 {/* 모듈별 테이블 */}
