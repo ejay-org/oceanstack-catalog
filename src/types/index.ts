@@ -7,9 +7,7 @@ export interface OpenSource {
   stars: number;
   startYear: number;
   language: string;
-  technologies: string[];
-  category: string;
-  module: string;
+  features: string[]; // 제공하는 기능들
   icon?: string;
 }
 
@@ -25,6 +23,7 @@ export interface Module {
   name: string;
   description: string;
   category: string;
+  requiredFeatures: string[]; // 이 모듈이 요구하는 기능들
 }
 
 export type CategoryId =

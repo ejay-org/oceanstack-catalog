@@ -1,6 +1,6 @@
-import { categories } from "@/data/categories";
+import Link from "next/link";
 import { openSourceProjects } from "@/data/opensource";
-import { CategorySection } from "@/components/CategorySection";
+import { OpenSourceCard } from "@/components/OpenSourceCard";
 
 export default function Home() {
   return (
@@ -18,39 +18,37 @@ export default function Home() {
       {/* 네비게이션 */}
       <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-[120px] z-10">
         <div className="max-w-7xl mx-auto px-6 py-3">
-          <div className="flex flex-wrap gap-3">
-            {categories.map((category) => {
-              const count = openSourceProjects.filter(
-                (project) => project.category === category.id
-              ).length;
-              return (
-                <a
-                  key={category.id}
-                  href={`#${category.id}`}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {category.name} ({count})
-                </a>
-              );
-            })}
+          <div className="flex gap-6">
+            <Link
+              href="/"
+              className="text-sm font-medium text-foreground border-b-2 border-primary pb-1"
+            >
+              인벤토리 ({openSourceProjects.length})
+            </Link>
+            <Link
+              href="/mapping"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              모듈 매핑
+            </Link>
           </div>
         </div>
       </nav>
 
-      {/* 메인 콘텐츠 */}
+      {/* 메인 콘텐츠 - 인벤토리 */}
       <main className="max-w-7xl mx-auto px-6 py-12">
-        {categories.map((category) => {
-          const categoryProjects = openSourceProjects.filter(
-            (project) => project.category === category.id
-          );
-          return (
-            <CategorySection
-              key={category.id}
-              category={category}
-              projects={categoryProjects}
-            />
-          );
-        })}
+        <div className="mb-6">
+          <h2 className="text-2xl font-bold mb-2">전체 오픈소스 인벤토리</h2>
+          <p className="text-sm text-muted-foreground">
+            MSP 통합운영플랫폼 구축에 활용 가능한 오픈소스 목록
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {openSourceProjects.map((project) => (
+            <OpenSourceCard key={project.id} project={project} />
+          ))}
+        </div>
       </main>
 
       {/* 푸터 */}

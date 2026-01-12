@@ -88,13 +88,18 @@ export function OpenSourceCard({ project }: OpenSourceCardProps) {
           </Badge>
         </div>
 
-        {/* 기술 태그 */}
+        {/* 기능 태그 */}
         <div className="flex flex-wrap gap-1.5">
-          {project.technologies.map((tech) => (
-            <Badge key={tech} variant="secondary" className="text-xs">
-              {tech}
+          {project.features.slice(0, 4).map((feature) => (
+            <Badge key={feature} variant="secondary" className="text-xs">
+              {feature}
             </Badge>
           ))}
+          {project.features.length > 4 ? (
+            <Badge variant="secondary" className="text-xs">
+              +{project.features.length - 4}
+            </Badge>
+          ) : null}
         </div>
       </CardContent>
     </Card>

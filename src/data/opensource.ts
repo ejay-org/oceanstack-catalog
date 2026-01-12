@@ -1,7 +1,7 @@
 import { OpenSource } from "@/types";
 
 export const openSourceProjects: OpenSource[] = [
-  // ==================== ITAM - 자산관리 ====================
+  // NetBox - IPAM & DCIM
   {
     id: "netbox",
     name: "NetBox",
@@ -11,11 +11,11 @@ export const openSourceProjects: OpenSource[] = [
     stars: 16000,
     startYear: 2016,
     language: "Python",
-    technologies: ["IPAM", "DCIM", "Asset Management"],
-    category: "itam",
-    module: "itam-asset",
+    features: ["ipam", "dcim", "asset-tracking", "inventory-collection", "topology-visualization"],
     icon: "Database",
   },
+  
+  // Snipe-IT - Asset Management
   {
     id: "snipe-it",
     name: "Snipe-IT",
@@ -25,11 +25,11 @@ export const openSourceProjects: OpenSource[] = [
     stars: 11000,
     startYear: 2013,
     language: "PHP",
-    technologies: ["Asset Tracking", "Inventory", "License Management"],
-    category: "itam",
-    module: "itam-asset",
+    features: ["asset-tracking", "inventory-collection"],
     icon: "Package",
   },
+  
+  // Ralph - Asset Management Platform
   {
     id: "ralph",
     name: "Ralph",
@@ -39,11 +39,11 @@ export const openSourceProjects: OpenSource[] = [
     stars: 2200,
     startYear: 2010,
     language: "Python",
-    technologies: ["DCIM", "CMDB", "Asset Management"],
-    category: "itam",
-    module: "itam-asset",
+    features: ["dcim", "asset-tracking", "inventory-collection"],
     icon: "Server",
   },
+  
+  // RackTables - Data Center Asset Management
   {
     id: "racktables",
     name: "RackTables",
@@ -53,13 +53,11 @@ export const openSourceProjects: OpenSource[] = [
     stars: 700,
     startYear: 2008,
     language: "PHP",
-    technologies: ["Data Center", "Asset Tracking", "Documentation"],
-    category: "itam",
-    module: "itam-asset",
+    features: ["dcim", "asset-tracking", "topology-visualization"],
     icon: "Database",
   },
-
-  // ==================== ITAM - 보안관리 ====================
+  
+  // OpenVAS - Vulnerability Scanner
   {
     id: "openvas",
     name: "OpenVAS",
@@ -69,11 +67,11 @@ export const openSourceProjects: OpenSource[] = [
     stars: 3200,
     startYear: 2009,
     language: "C",
-    technologies: ["Vulnerability Scanning", "Security Assessment"],
-    category: "itam",
-    module: "itam-security",
+    features: ["vulnerability-scanning"],
     icon: "Shield",
   },
+  
+  // Trivy - Container Security Scanner
   {
     id: "trivy",
     name: "Trivy",
@@ -83,11 +81,11 @@ export const openSourceProjects: OpenSource[] = [
     stars: 23000,
     startYear: 2019,
     language: "Go",
-    technologies: ["Container Security", "Vulnerability Detection", "SBOM"],
-    category: "itam",
-    module: "itam-security",
+    features: ["vulnerability-scanning"],
     icon: "ShieldCheck",
   },
+  
+  // Vault - Secrets Management
   {
     id: "vault",
     name: "HashiCorp Vault",
@@ -97,229 +95,221 @@ export const openSourceProjects: OpenSource[] = [
     stars: 31000,
     startYear: 2015,
     language: "Go",
-    technologies: ["Secret Management", "Encryption", "Access Control"],
-    category: "itam",
-    module: "itam-security",
+    features: ["secrets-management", "access-control", "authentication"],
     icon: "Lock",
   },
+  
+  // Keycloak - Identity and Access Management
   {
     id: "keycloak",
     name: "Keycloak",
-    description: "오픈소스 IAM 및 SSO 솔루션",
+    description: "오픈소스 인증 및 권한 관리 솔루션",
     license: "Apache-2.0",
     githubUrl: "https://github.com/keycloak/keycloak",
     stars: 23000,
     startYear: 2014,
     language: "Java",
-    technologies: ["IAM", "SSO", "OAuth2", "SAML"],
-    category: "itam",
-    module: "itam-security",
-    icon: "KeyRound",
+    features: ["authentication", "authorization", "access-control"],
+    icon: "Key",
   },
-
-  // ==================== ITAM - 비용관리 ====================
+  
+  // OpenCost - Cloud Cost Monitoring
   {
     id: "opencost",
     name: "OpenCost",
-    description: "Kubernetes 비용 모니터링 및 분석",
+    description: "Kubernetes 비용 모니터링 및 관리",
     license: "Apache-2.0",
     githubUrl: "https://github.com/opencost/opencost",
-    stars: 5100,
+    stars: 5000,
     startYear: 2021,
     language: "Go",
-    technologies: ["Kubernetes", "Cost Management", "FinOps"],
-    category: "itam",
-    module: "itam-cost",
+    features: ["cost-tracking", "cost-analysis", "usage-monitoring"],
     icon: "DollarSign",
   },
+  
+  // Infracost - Infrastructure Cost Estimation
   {
     id: "infracost",
     name: "Infracost",
-    description: "Terraform 코드의 클라우드 비용 예측",
+    description: "인프라 비용 예측 및 분석 도구",
     license: "Apache-2.0",
     githubUrl: "https://github.com/infracost/infracost",
-    stars: 10700,
+    stars: 11000,
     startYear: 2020,
     language: "Go",
-    technologies: ["IaC", "Cost Estimation", "Terraform"],
-    category: "itam",
-    module: "itam-cost",
+    features: ["cost-analysis", "optimization-recommendations", "budget-management"],
     icon: "Calculator",
   },
+  
+  // Cloud Custodian - Cloud Governance
   {
     id: "cloud-custodian",
     name: "Cloud Custodian",
-    description: "클라우드 리소스 관리 및 비용 최적화",
+    description: "클라우드 자원 관리 및 비용 최적화",
     license: "Apache-2.0",
     githubUrl: "https://github.com/cloud-custodian/cloud-custodian",
     stars: 5300,
     startYear: 2016,
     language: "Python",
-    technologies: ["Cloud Management", "Cost Optimization", "Compliance"],
-    category: "itam",
-    module: "itam-cost",
-    icon: "CloudCog",
+    features: ["cost-tracking", "optimization-recommendations", "automation"],
+    icon: "Cloud",
   },
-
-  // ==================== ITOM - 모니터링 ====================
+  
+  // Prometheus - Monitoring System
   {
     id: "prometheus",
     name: "Prometheus",
-    description: "오픈소스 모니터링 시스템 및 시계열 데이터베이스",
+    description: "강력한 메트릭 수집 및 모니터링 시스템",
     license: "Apache-2.0",
     githubUrl: "https://github.com/prometheus/prometheus",
     stars: 55000,
     startYear: 2012,
     language: "Go",
-    technologies: ["Time Series DB", "Monitoring", "Alerting"],
-    category: "itom",
-    module: "itom-monitoring",
-    icon: "https://raw.githubusercontent.com/cncf/artwork/master/projects/prometheus/icon/color/prometheus-icon-color.png",
+    features: ["metrics-collection", "performance-monitoring", "time-series-db", "alerting"],
+    icon: "https://prometheus.io/assets/favicons/android-chrome-192x192.png",
   },
+  
+  // Grafana - Visualization Platform
   {
     id: "grafana",
     name: "Grafana",
-    description: "메트릭 분석 및 시각화 플랫폼",
+    description: "메트릭 시각화 및 대시보드 플랫폼",
     license: "AGPL-3.0",
     githubUrl: "https://github.com/grafana/grafana",
     stars: 64000,
     startYear: 2014,
     language: "TypeScript",
-    technologies: ["Visualization", "Dashboards", "Analytics"],
-    category: "itom",
-    module: "itom-monitoring",
-    icon: "https://raw.githubusercontent.com/grafana/grafana/main/public/img/grafana_icon.svg",
+    features: ["dashboard", "visualization", "analytics", "reporting", "alerting"],
+    icon: "https://grafana.com/static/img/menu/grafana2.svg",
   },
+  
+  // Zabbix - Enterprise Monitoring
   {
     id: "zabbix",
     name: "Zabbix",
-    description: "엔터프라이즈급 오픈소스 모니터링 솔루션",
+    description: "엔터프라이즈급 모니터링 솔루션",
     license: "GPL-2.0",
     githubUrl: "https://github.com/zabbix/zabbix",
     stars: 4500,
     startYear: 2001,
     language: "C",
-    technologies: ["Monitoring", "Alerting", "Network"],
-    category: "itom",
-    module: "itom-monitoring",
-    icon: "Monitor",
+    features: ["metrics-collection", "performance-monitoring", "event-monitoring", "alerting"],
+    icon: "Activity",
   },
+  
+  // Jaeger - Distributed Tracing
   {
     id: "jaeger",
     name: "Jaeger",
-    description: "분산 트레이싱 시스템",
+    description: "분산 추적 시스템",
     license: "Apache-2.0",
     githubUrl: "https://github.com/jaegertracing/jaeger",
     stars: 20000,
-    startYear: 2016,
+    startYear: 2017,
     language: "Go",
-    technologies: ["Distributed Tracing", "Observability", "Microservices"],
-    category: "itom",
-    module: "itom-monitoring",
-    icon: "Route",
+    features: ["trace-collection", "observability", "performance-monitoring"],
+    icon: "Network",
   },
+  
+  // OpenTelemetry - Observability Framework
   {
     id: "opentelemetry",
     name: "OpenTelemetry",
-    description: "관측성 데이터 수집 프레임워크",
+    description: "통합 관측성 프레임워크",
     license: "Apache-2.0",
     githubUrl: "https://github.com/open-telemetry/opentelemetry-collector",
     stars: 4300,
     startYear: 2019,
     language: "Go",
-    technologies: ["Observability", "Tracing", "Metrics", "Logs"],
-    category: "itom",
-    module: "itom-monitoring",
+    features: ["metrics-collection", "log-collection", "trace-collection", "observability"],
     icon: "Telescope",
   },
-
-  // ==================== ITOM - 이상감지/전파 ====================
+  
+  // Alertmanager - Alert Management
   {
     id: "alertmanager",
     name: "Alertmanager",
-    description: "Prometheus용 알림 관리 시스템",
+    description: "알림 관리 및 전파 시스템",
     license: "Apache-2.0",
     githubUrl: "https://github.com/prometheus/alertmanager",
-    stars: 6600,
+    stars: 6500,
     startYear: 2015,
     language: "Go",
-    technologies: ["Alert Management", "Notification", "Routing"],
-    category: "itom",
-    module: "itom-detection",
+    features: ["alerting", "notification-routing", "alert-management"],
     icon: "Bell",
   },
+  
+  // ElastAlert - Alerting for Elasticsearch
   {
     id: "elastalert",
-    name: "ElastAlert 2",
+    name: "ElastAlert",
     description: "Elasticsearch 기반 알림 프레임워크",
     license: "Apache-2.0",
     githubUrl: "https://github.com/jertel/elastalert2",
     stars: 900,
-    startYear: 2021,
+    startYear: 2020,
     language: "Python",
-    technologies: ["Elasticsearch", "Alerting", "Anomaly Detection"],
-    category: "itom",
-    module: "itom-detection",
-    icon: "BellRing",
+    features: ["alerting", "anomaly-detection", "notification-routing"],
+    icon: "AlertTriangle",
   },
+  
+  // Alerta - Alert Consolidation
   {
     id: "alerta",
     name: "Alerta",
-    description: "통합 알림 및 이벤트 관리",
+    description: "통합 알림 관리 시스템",
     license: "Apache-2.0",
     githubUrl: "https://github.com/alerta/alerta",
-    stars: 2400,
+    stars: 2300,
     startYear: 2012,
     language: "Python",
-    technologies: ["Alert Management", "Event Correlation", "Multi-source"],
-    category: "itom",
-    module: "itom-detection",
-    icon: "BellDot",
+    features: ["alerting", "alert-management", "notification-routing"],
+    icon: "BellRing",
   },
-
-  // ==================== ITOM - 자동복구 ====================
+  
+  // Rundeck - Runbook Automation
   {
     id: "rundeck",
     name: "Rundeck",
-    description: "운영 자동화 및 작업 스케줄러 - 런북 자동화",
+    description: "작업 스케줄링 및 자동화 플랫폼",
     license: "Apache-2.0",
     githubUrl: "https://github.com/rundeck/rundeck",
     stars: 5500,
     startYear: 2010,
     language: "Java",
-    technologies: ["Automation", "Scheduling", "Runbook"],
-    category: "itom",
-    module: "itom-recovery",
-    icon: "ClipboardList",
+    features: ["automation", "orchestration", "scheduling"],
+    icon: "PlayCircle",
   },
+  
+  // StackStorm - Event-Driven Automation
   {
     id: "stackstorm",
     name: "StackStorm",
-    description: "이벤트 기반 자동화 플랫폼 - IFTTT for Ops",
+    description: "이벤트 기반 자동화 플랫폼",
     license: "Apache-2.0",
     githubUrl: "https://github.com/StackStorm/st2",
     stars: 6000,
     startYear: 2014,
     language: "Python",
-    technologies: ["Event-Driven", "Automation", "Workflow"],
-    category: "itom",
-    module: "itom-recovery",
-    icon: "Workflow",
+    features: ["automation", "orchestration", "auto-remediation"],
+    icon: "Zap",
   },
+  
+  // Ansible - Configuration Management
   {
     id: "ansible",
     name: "Ansible",
-    description: "IT 자동화 및 구성 관리 도구",
+    description: "구성 관리 및 자동화 도구",
     license: "GPL-3.0",
     githubUrl: "https://github.com/ansible/ansible",
-    stars: 62000,
+    stars: 63000,
     startYear: 2012,
     language: "Python",
-    technologies: ["Automation", "Configuration Management", "Orchestration"],
-    category: "itom",
-    module: "itom-recovery",
-    icon: "Cog",
+    features: ["automation", "configuration-management", "orchestration", "infrastructure-as-code"],
+    icon: "Settings",
   },
+  
+  // Kubernetes - Container Orchestration
   {
     id: "kubernetes",
     name: "Kubernetes",
@@ -329,13 +319,11 @@ export const openSourceProjects: OpenSource[] = [
     stars: 110000,
     startYear: 2014,
     language: "Go",
-    technologies: ["Container Orchestration", "Cloud Native", "Microservices"],
-    category: "itom",
-    module: "itom-recovery",
-    icon: "https://raw.githubusercontent.com/cncf/artwork/master/projects/kubernetes/icon/color/kubernetes-icon-color.png",
+    features: ["orchestration", "automation", "auto-remediation", "infrastructure-as-code"],
+    icon: "https://kubernetes.io/images/favicon.png",
   },
-
-  // ==================== ITSM - 서비스 데스크 ====================
+  
+  // osTicket - Help Desk System
   {
     id: "osticket",
     name: "osTicket",
@@ -343,13 +331,13 @@ export const openSourceProjects: OpenSource[] = [
     license: "GPL-2.0",
     githubUrl: "https://github.com/osTicket/osTicket",
     stars: 3200,
-    startYear: 2003,
+    startYear: 2006,
     language: "PHP",
-    technologies: ["Ticketing", "Help Desk", "Support"],
-    category: "itsm",
-    module: "itsm-desk",
+    features: ["ticketing", "help-desk", "customer-feedback"],
     icon: "Ticket",
   },
+  
+  // GLPI - IT Asset Management & Help Desk
   {
     id: "glpi",
     name: "GLPI",
@@ -359,87 +347,81 @@ export const openSourceProjects: OpenSource[] = [
     stars: 4100,
     startYear: 2003,
     language: "PHP",
-    technologies: ["ITSM", "Asset Management", "Help Desk"],
-    category: "itsm",
-    module: "itsm-desk",
-    icon: "Headset",
+    features: ["ticketing", "help-desk", "asset-tracking", "inventory-collection"],
+    icon: "Inbox",
   },
+  
+  // Zammad - Ticket System
   {
     id: "zammad",
     name: "Zammad",
-    description: "웹 기반 헬프데스크 및 고객 지원 시스템",
+    description: "현대적인 웹 기반 티켓 시스템",
     license: "AGPL-3.0",
     githubUrl: "https://github.com/zammad/zammad",
     stars: 4400,
     startYear: 2012,
     language: "Ruby",
-    technologies: ["Help Desk", "Ticketing", "Customer Support"],
-    category: "itsm",
-    module: "itsm-desk",
+    features: ["ticketing", "help-desk", "customer-feedback"],
     icon: "MessageSquare",
   },
-
-  // ==================== ITSM - 워크플로우 관리 ====================
+  
+  // Camunda - Workflow Engine
   {
     id: "camunda",
-    name: "Camunda Platform",
+    name: "Camunda",
     description: "워크플로우 및 의사결정 자동화 플랫폼",
     license: "Apache-2.0",
     githubUrl: "https://github.com/camunda/camunda-bpm-platform",
     stars: 4100,
     startYear: 2013,
     language: "Java",
-    technologies: ["BPMN", "Workflow", "Process Automation"],
-    category: "itsm",
-    module: "itsm-workflow",
-    icon: "GitFork",
+    features: ["workflow-engine", "bpm", "automation", "orchestration"],
+    icon: "Workflow",
   },
+  
+  // n8n - Workflow Automation
   {
     id: "n8n",
     name: "n8n",
-    description: "워크플로우 자동화 도구",
+    description: "노코드 워크플로우 자동화 도구",
     license: "Fair-code",
     githubUrl: "https://github.com/n8n-io/n8n",
     stars: 47000,
     startYear: 2019,
     language: "TypeScript",
-    technologies: ["Workflow Automation", "Integration", "No-Code"],
-    category: "itsm",
-    module: "itsm-workflow",
-    icon: "Zap",
+    features: ["workflow-engine", "automation", "api-integration", "workflow-automation"],
+    icon: "GitBranch",
   },
-
-  // ==================== ITSM - 계약/실적 관리 ====================
+  
+  // Odoo - ERP & CRM
   {
     id: "odoo",
     name: "Odoo",
-    description: "오픈소스 ERP 및 비즈니스 앱 스위트",
+    description: "통합 비즈니스 관리 소프트웨어",
     license: "LGPL-3.0",
     githubUrl: "https://github.com/odoo/odoo",
     stars: 38000,
     startYear: 2005,
     language: "Python",
-    technologies: ["ERP", "CRM", "Project Management"],
-    category: "itsm",
-    module: "itsm-contract",
+    features: ["erp", "contract-management", "project-management", "workflow-engine"],
     icon: "Briefcase",
   },
+  
+  // ERPNext - ERP Solution
   {
     id: "erpnext",
     name: "ERPNext",
-    description: "오픈소스 ERP 시스템",
+    description: "오픈소스 ERP 솔루션",
     license: "GPL-3.0",
     githubUrl: "https://github.com/frappe/erpnext",
     stars: 20000,
     startYear: 2008,
     language: "Python",
-    technologies: ["ERP", "Accounting", "Inventory"],
-    category: "itsm",
-    module: "itsm-contract",
-    icon: "FileSpreadsheet",
+    features: ["erp", "contract-management", "project-management", "sla-management"],
+    icon: "FolderKanban",
   },
-
-  // ==================== Analysis - 데이터 레이크 ====================
+  
+  // Elasticsearch - Search & Analytics Engine
   {
     id: "elasticsearch",
     name: "Elasticsearch",
@@ -449,115 +431,109 @@ export const openSourceProjects: OpenSource[] = [
     stars: 70000,
     startYear: 2010,
     language: "Java",
-    technologies: ["Search", "Analytics", "Log Management"],
-    category: "analysis",
-    module: "analysis-lake",
+    features: ["search", "data-storage", "data-integration", "analytics", "log-collection"],
     icon: "Search",
   },
+  
+  // MinIO - Object Storage
   {
     id: "minio",
     name: "MinIO",
-    description: "S3 호환 고성능 오브젝트 스토리지",
+    description: "고성능 S3 호환 오브젝트 스토리지",
     license: "AGPL-3.0",
     githubUrl: "https://github.com/minio/minio",
     stars: 47000,
     startYear: 2014,
     language: "Go",
-    technologies: ["Object Storage", "S3 Compatible", "Data Lake"],
-    category: "analysis",
-    module: "analysis-lake",
-    icon: "Database",
+    features: ["object-storage", "data-storage"],
+    icon: "HardDrive",
   },
-
-  // ==================== Analysis - 트렌드/예측 분석 ====================
+  
+  // Kibana - Data Visualization
   {
     id: "kibana",
     name: "Kibana",
-    description: "Elasticsearch를 위한 분석 및 시각화 플랫폼",
+    description: "Elasticsearch 데이터 시각화 도구",
     license: "SSPL",
     githubUrl: "https://github.com/elastic/kibana",
     stars: 20000,
     startYear: 2011,
     language: "TypeScript",
-    technologies: ["Visualization", "Analytics", "Dashboards"],
-    category: "analysis",
-    module: "analysis-trend",
+    features: ["dashboard", "visualization", "analytics", "search"],
     icon: "BarChart",
   },
+  
+  // Metabase - Business Intelligence
   {
     id: "metabase",
     name: "Metabase",
-    description: "비즈니스 인텔리전스 및 분석 도구",
+    description: "간편한 BI 및 데이터 시각화 도구",
     license: "AGPL-3.0",
     githubUrl: "https://github.com/metabase/metabase",
     stars: 38000,
     startYear: 2015,
     language: "Clojure",
-    technologies: ["BI", "Analytics", "Visualization"],
-    category: "analysis",
-    module: "analysis-trend",
+    features: ["dashboard", "visualization", "analytics", "business-intelligence", "reporting"],
     icon: "PieChart",
   },
+  
+  // Superset - Data Exploration
   {
     id: "superset",
     name: "Apache Superset",
-    description: "데이터 탐색 및 시각화 플랫폼",
+    description: "현대적인 데이터 탐색 및 시각화 플랫폼",
     license: "Apache-2.0",
     githubUrl: "https://github.com/apache/superset",
     stars: 62000,
     startYear: 2015,
     language: "Python",
-    technologies: ["BI", "Visualization", "Data Exploration"],
-    category: "analysis",
-    module: "analysis-trend",
-    icon: "TrendingUp",
+    features: ["dashboard", "visualization", "analytics", "business-intelligence"],
+    icon: "LineChart",
   },
-
-  // ==================== Analysis - 자동 리포팅 ====================
+  
+  // Logstash - Data Processing Pipeline
   {
     id: "logstash",
     name: "Logstash",
-    description: "서버측 데이터 처리 파이프라인",
-    license: "Apache-2.0",
+    description: "데이터 수집 및 처리 파이프라인",
+    license: "SSPL",
     githubUrl: "https://github.com/elastic/logstash",
     stars: 14000,
     startYear: 2009,
     language: "Ruby",
-    technologies: ["Data Processing", "ETL", "Logs"],
-    category: "analysis",
-    module: "analysis-report",
-    icon: "Filter",
+    features: ["log-collection", "data-pipeline", "etl", "data-integration"],
+    icon: "Layers",
   },
+  
+  // Fluentd - Unified Logging Layer
   {
     id: "fluentd",
     name: "Fluentd",
-    description: "통합 로깅 레이어 - 데이터 수집기",
+    description: "통합 로깅 레이어",
     license: "Apache-2.0",
     githubUrl: "https://github.com/fluent/fluentd",
-    stars: 12800,
+    stars: 13000,
     startYear: 2011,
     language: "Ruby",
-    technologies: ["Log Collection", "Data Processing"],
-    category: "analysis",
-    module: "analysis-report",
-    icon: "FileText",
+    features: ["log-collection", "data-pipeline", "data-integration"],
+    icon: "Filter",
   },
+  
+  // Apache Airflow - Workflow Orchestration
   {
     id: "airflow",
     name: "Apache Airflow",
-    description: "워크플로우 관리 플랫폼",
+    description: "워크플로우 스케줄링 및 모니터링 플랫폼",
     license: "Apache-2.0",
     githubUrl: "https://github.com/apache/airflow",
-    stars: 36000,
+    stars: 37000,
     startYear: 2014,
     language: "Python",
-    technologies: ["Workflow", "Scheduling", "Data Pipeline"],
-    category: "analysis",
-    module: "analysis-report",
-    icon: "Workflow",
+    features: ["scheduling", "data-pipeline", "etl", "workflow-engine", "automation"],
+    icon: "Calendar",
   },
-
-  // ==================== AI/Automation - AI Agent ====================
+  
+  // LangChain - LLM Application Framework
   {
     id: "langchain",
     name: "LangChain",
@@ -567,25 +543,25 @@ export const openSourceProjects: OpenSource[] = [
     stars: 93000,
     startYear: 2022,
     language: "Python",
-    technologies: ["LLM", "RAG", "AI Agent"],
-    category: "ai-automation",
-    module: "ai-agent",
+    features: ["llm-integration", "rag", "ai-assistant", "chatbot"],
     icon: "BrainCircuit",
   },
+  
+  // LlamaIndex - Data Framework for LLM
   {
     id: "llamaindex",
     name: "LlamaIndex",
-    description: "LLM 데이터 프레임워크 (GPT Index)",
+    description: "LLM용 데이터 프레임워크",
     license: "MIT",
     githubUrl: "https://github.com/run-llama/llama_index",
     stars: 36000,
     startYear: 2022,
     language: "Python",
-    technologies: ["LLM", "RAG", "Knowledge Base"],
-    category: "ai-automation",
-    module: "ai-agent",
+    features: ["llm-integration", "rag", "knowledge-base", "embedding"],
     icon: "BookOpen",
   },
+  
+  // Rasa - Conversational AI
   {
     id: "rasa",
     name: "Rasa",
@@ -595,13 +571,11 @@ export const openSourceProjects: OpenSource[] = [
     stars: 18000,
     startYear: 2016,
     language: "Python",
-    technologies: ["Chatbot", "NLU", "Dialog Management"],
-    category: "ai-automation",
-    module: "ai-agent",
+    features: ["chatbot", "ai-assistant", "llm-integration"],
     icon: "MessageCircle",
   },
-
-  // ==================== AI/Automation - Automation ====================
+  
+  // Jenkins - CI/CD Automation
   {
     id: "jenkins",
     name: "Jenkins",
@@ -611,11 +585,11 @@ export const openSourceProjects: OpenSource[] = [
     stars: 23000,
     startYear: 2011,
     language: "Java",
-    technologies: ["CI/CD", "Automation", "Pipeline"],
-    category: "ai-automation",
-    module: "ai-automation-module",
+    features: ["ci-cd", "automation", "workflow-automation"],
     icon: "GitBranch",
   },
+  
+  // GitLab - DevOps Platform
   {
     id: "gitlab",
     name: "GitLab",
@@ -625,11 +599,11 @@ export const openSourceProjects: OpenSource[] = [
     stars: 24000,
     startYear: 2011,
     language: "Ruby",
-    technologies: ["Git", "CI/CD", "DevOps"],
-    category: "ai-automation",
-    module: "ai-automation-module",
+    features: ["ci-cd", "automation", "gitops", "api-integration"],
     icon: "GitMerge",
   },
+  
+  // Argo CD - GitOps Continuous Delivery
   {
     id: "argocd",
     name: "Argo CD",
@@ -639,9 +613,7 @@ export const openSourceProjects: OpenSource[] = [
     stars: 18000,
     startYear: 2018,
     language: "Go",
-    technologies: ["GitOps", "Kubernetes", "Continuous Deployment"],
-    category: "ai-automation",
-    module: "ai-automation-module",
+    features: ["gitops", "ci-cd", "automation"],
     icon: "GitPullRequest",
   },
 ];
