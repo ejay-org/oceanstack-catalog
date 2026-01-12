@@ -8,15 +8,12 @@ export default function Home() {
       {/* 헤더 */}
       <header className="border-b sticky top-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-10">
         <div className="max-w-7xl mx-auto px-6 py-6">
-          <h1 className="text-4xl font-bold mb-2">MSP 오픈소스 카탈로그</h1>
-          <p className="text-lg text-muted-foreground">
-            MSP 통합운영플랫폼을 위한 오픈소스 조사 및 정리
-          </p>
+          <h1 className="text-4xl font-bold">MSP 오픈소스 카탈로그</h1>
         </div>
       </header>
 
       {/* 네비게이션 */}
-      <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-[120px] z-10">
+      <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-[89px] z-10">
         <div className="max-w-7xl mx-auto px-6 py-3">
           <div className="flex gap-6">
             <Link
@@ -52,7 +49,7 @@ export default function Home() {
       </main>
 
       {/* 푸터 */}
-      <footer className="border-t mt-20">
+      <footer className="border-t">
         <div className="max-w-7xl mx-auto px-6 py-8">
           <p className="text-center text-sm text-muted-foreground">
             MSP 통합운영플랫폼 구축을 위한 오픈소스 조사 프로젝트

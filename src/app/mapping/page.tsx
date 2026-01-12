@@ -3,6 +3,7 @@ import { categories } from "@/data/categories";
 import { modules } from "@/data/modules";
 import { openSourceProjects } from "@/data/opensource";
 import { getOpenSourceForModule, getMatchScore } from "@/lib/mapping";
+import { BatteryIcon } from "@/components/BatteryIcon";
 import * as LucideIcons from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
@@ -25,15 +26,12 @@ export default function MappingPage() {
       {/* 헤더 */}
       <header className="border-b sticky top-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-10">
         <div className="max-w-7xl mx-auto px-6 py-6">
-          <h1 className="text-4xl font-bold mb-2">MSP 오픈소스 카탈로그</h1>
-          <p className="text-lg text-muted-foreground">
-            MSP 통합운영플랫폼을 위한 오픈소스 조사 및 정리
-          </p>
+          <h1 className="text-4xl font-bold">MSP 오픈소스 카탈로그</h1>
         </div>
       </header>
 
       {/* 네비게이션 */}
-      <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-[120px] z-10">
+      <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-[89px] z-10">
         <div className="max-w-7xl mx-auto px-6 py-3">
           <div className="flex gap-6">
             <Link
@@ -68,7 +66,8 @@ export default function MappingPage() {
 
             return (
               <section key={category.id} id={category.id}>
-                <div className="mb-4">
+                {/* 카테고리 색상 바 */}
+                <div className="mb-6 -mx-6 px-6 py-4 bg-gradient-to-r from-primary/20 to-primary/5 border-l-4 border-primary">
                   <h3 className="text-xl font-bold mb-1">{category.name}</h3>
                   <p className="text-sm text-muted-foreground">{category.description}</p>
                 </div>
@@ -114,7 +113,7 @@ export default function MappingPage() {
                                   href={project.githubUrl}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="flex items-center gap-2 p-2 border rounded-lg hover:bg-accent transition-colors group"
+                                  className="flex items-center gap-2 p-2 border rounded-lg bg-accent/30 hover:bg-accent transition-colors group"
                                 >
                                   <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
                                     {iconUrl ? (
@@ -131,10 +130,8 @@ export default function MappingPage() {
                                     <div className="text-sm font-medium truncate group-hover:text-primary">
                                       {project.name}
                                     </div>
-                                    <div className="text-xs text-muted-foreground">
-                                      {matchScore}% 매칭
-                                    </div>
                                   </div>
+                                  <BatteryIcon percentage={matchScore} />
                                 </a>
                               );
                             })}
@@ -155,7 +152,7 @@ export default function MappingPage() {
       </main>
 
       {/* 푸터 */}
-      <footer className="border-t mt-20">
+      <footer className="border-t">
         <div className="max-w-7xl mx-auto px-6 py-8">
           <p className="text-center text-sm text-muted-foreground">
             MSP 통합운영플랫폼 구축을 위한 오픈소스 조사 프로젝트
