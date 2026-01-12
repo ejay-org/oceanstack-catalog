@@ -12,7 +12,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2016,
     language: "Python",
     features: ["ipam", "dcim", "asset-tracking", "inventory-collection", "topology-visualization"],
-    icon: "Database",
+    icon: "https://raw.githubusercontent.com/netbox-community/netbox/develop/docs/netbox_logo.svg",
   },
   
   // Snipe-IT - Asset Management
@@ -26,7 +26,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2013,
     language: "PHP",
     features: ["asset-tracking", "inventory-collection"],
-    icon: "Package",
+    icon: "https://snipeitapp.com/img/logos/snipe-it-bug-black.svg",
   },
   
   // Ralph - Asset Management Platform
@@ -40,7 +40,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2010,
     language: "Python",
     features: ["dcim", "asset-tracking", "inventory-collection"],
-    icon: "Server",
+    icon: "https://raw.githubusercontent.com/allegro/ralph/ng/docs/img/ralph_logo.png",
   },
   
   // RackTables - Data Center Asset Management
@@ -68,7 +68,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2009,
     language: "C",
     features: ["vulnerability-scanning"],
-    icon: "Shield",
+    icon: "https://www.greenbone.net/typo3conf/ext/customertemplate/Resources/Public/Images/Greenbone_Logo.svg",
   },
   
   // Trivy - Container Security Scanner
@@ -82,7 +82,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2019,
     language: "Go",
     features: ["vulnerability-scanning"],
-    icon: "ShieldCheck",
+    icon: "https://raw.githubusercontent.com/aquasecurity/trivy/main/docs/imgs/logo.png",
   },
   
   // Vault - Secrets Management
@@ -96,7 +96,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2015,
     language: "Go",
     features: ["secrets-management", "access-control", "authentication"],
-    icon: "Lock",
+    icon: "https://cdn.simpleicons.org/vault",
   },
   
   // Keycloak - Identity and Access Management
@@ -110,7 +110,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2014,
     language: "Java",
     features: ["authentication", "authorization", "access-control"],
-    icon: "Key",
+    icon: "https://www.keycloak.org/resources/images/icon.svg",
   },
   
   // OpenCost - Cloud Cost Monitoring
@@ -124,7 +124,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2021,
     language: "Go",
     features: ["cost-tracking", "cost-analysis", "usage-monitoring"],
-    icon: "DollarSign",
+    icon: "https://raw.githubusercontent.com/opencost/opencost/develop/docs/opencost-logo.png",
   },
   
   // Infracost - Infrastructure Cost Estimation
@@ -138,7 +138,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2020,
     language: "Go",
     features: ["cost-analysis", "optimization-recommendations", "budget-management"],
-    icon: "Calculator",
+    icon: "https://raw.githubusercontent.com/infracost/infracost/master/assets/logo.svg",
   },
   
   // Cloud Custodian - Cloud Governance
@@ -152,7 +152,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2016,
     language: "Python",
     features: ["cost-tracking", "optimization-recommendations", "automation"],
-    icon: "Cloud",
+    icon: "https://raw.githubusercontent.com/cloud-custodian/cloud-custodian/main/docs/logos/cloud-custodian.png",
   },
   
   // Prometheus - Monitoring System
@@ -166,7 +166,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2012,
     language: "Go",
     features: ["metrics-collection", "performance-monitoring", "time-series-db", "alerting"],
-    icon: "https://prometheus.io/assets/favicons/android-chrome-192x192.png",
+    icon: "https://cdn.simpleicons.org/prometheus",
   },
   
   // Grafana - Visualization Platform
@@ -180,7 +180,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2014,
     language: "TypeScript",
     features: ["dashboard", "visualization", "analytics", "reporting", "alerting"],
-    icon: "https://grafana.com/static/img/menu/grafana2.svg",
+    icon: "https://cdn.simpleicons.org/grafana",
   },
   
   // Zabbix - Enterprise Monitoring
@@ -194,7 +194,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2001,
     language: "C",
     features: ["metrics-collection", "performance-monitoring", "event-monitoring", "alerting"],
-    icon: "Activity",
+    icon: "https://cdn.simpleicons.org/zabbix",
   },
   
   // Jaeger - Distributed Tracing
@@ -208,7 +208,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2017,
     language: "Go",
     features: ["trace-collection", "observability", "performance-monitoring"],
-    icon: "Network",
+    icon: "https://www.jaegertracing.io/img/jaeger-icon-color.svg",
   },
   
   // OpenTelemetry - Observability Framework
@@ -222,7 +222,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2019,
     language: "Go",
     features: ["metrics-collection", "log-collection", "trace-collection", "observability"],
-    icon: "Telescope",
+    icon: "https://opentelemetry.io/img/logos/opentelemetry-horizontal-color.svg",
   },
   
   // Alertmanager - Alert Management
@@ -236,7 +236,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2015,
     language: "Go",
     features: ["alerting", "notification-routing", "alert-management"],
-    icon: "Bell",
+    icon: "https://cdn.simpleicons.org/prometheus",
   },
   
   // ElastAlert - Alerting for Elasticsearch
@@ -250,7 +250,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2020,
     language: "Python",
     features: ["alerting", "anomaly-detection", "notification-routing"],
-    icon: "AlertTriangle",
+    icon: "https://cdn.simpleicons.org/elasticsearch",
   },
   
   // Alerta - Alert Consolidation
@@ -264,7 +264,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2012,
     language: "Python",
     features: ["alerting", "alert-management", "notification-routing"],
-    icon: "BellRing",
+    icon: "https://alerta.io/en/latest/_static/images/alerta-logo.png",
   },
   
   // Rundeck - Runbook Automation
@@ -278,7 +278,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2010,
     language: "Java",
     features: ["automation", "orchestration", "scheduling"],
-    icon: "PlayCircle",
+    icon: "https://www.rundeck.com/hubfs/Assets/Images/rundeck-icon-black-2022.svg",
   },
   
   // StackStorm - Event-Driven Automation
@@ -292,7 +292,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2014,
     language: "Python",
     features: ["automation", "orchestration", "auto-remediation"],
-    icon: "Zap",
+    icon: "https://raw.githubusercontent.com/StackStorm/st2/master/st2client/st2client/logo.png",
   },
   
   // Ansible - Configuration Management
@@ -306,7 +306,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2012,
     language: "Python",
     features: ["automation", "configuration-management", "orchestration", "infrastructure-as-code"],
-    icon: "Settings",
+    icon: "https://cdn.simpleicons.org/ansible",
   },
   
   // Kubernetes - Container Orchestration
@@ -320,7 +320,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2014,
     language: "Go",
     features: ["orchestration", "automation", "auto-remediation", "infrastructure-as-code"],
-    icon: "https://kubernetes.io/images/favicon.png",
+    icon: "https://cdn.simpleicons.org/kubernetes",
   },
   
   // osTicket - Help Desk System
@@ -334,7 +334,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2006,
     language: "PHP",
     features: ["ticketing", "help-desk", "customer-feedback"],
-    icon: "Ticket",
+    icon: "https://osticket.com/sites/default/files/osTicket.png",
   },
   
   // GLPI - IT Asset Management & Help Desk
@@ -348,7 +348,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2003,
     language: "PHP",
     features: ["ticketing", "help-desk", "asset-tracking", "inventory-collection"],
-    icon: "Inbox",
+    icon: "https://glpi-project.org/wp-content/uploads/2022/02/GLPI_LOGO_BLEU.svg",
   },
   
   // Zammad - Ticket System
@@ -362,7 +362,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2012,
     language: "Ruby",
     features: ["ticketing", "help-desk", "customer-feedback"],
-    icon: "MessageSquare",
+    icon: "https://zammad.com/media/pages/product/features/integrations/a9ec4b4e07-1706881714/zammad-logo-header.svg",
   },
   
   // Camunda - Workflow Engine
@@ -376,7 +376,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2013,
     language: "Java",
     features: ["workflow-engine", "bpm", "automation", "orchestration"],
-    icon: "Workflow",
+    icon: "https://camunda.com/wp-content/uploads/2020/05/logo-camunda-black.svg",
   },
   
   // n8n - Workflow Automation
@@ -390,7 +390,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2019,
     language: "TypeScript",
     features: ["workflow-engine", "automation", "api-integration", "workflow-automation"],
-    icon: "GitBranch",
+    icon: "https://n8n.io/favicon.svg",
   },
   
   // Odoo - ERP & CRM
@@ -404,7 +404,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2005,
     language: "Python",
     features: ["erp", "contract-management", "project-management", "workflow-engine"],
-    icon: "Briefcase",
+    icon: "https://cdn.simpleicons.org/odoo",
   },
   
   // ERPNext - ERP Solution
@@ -418,7 +418,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2008,
     language: "Python",
     features: ["erp", "contract-management", "project-management", "sla-management"],
-    icon: "FolderKanban",
+    icon: "https://erpnext.com/files/erpnext-logo.svg",
   },
   
   // Elasticsearch - Search & Analytics Engine
@@ -432,7 +432,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2010,
     language: "Java",
     features: ["search", "data-storage", "data-integration", "analytics", "log-collection"],
-    icon: "Search",
+    icon: "https://cdn.simpleicons.org/elasticsearch",
   },
   
   // MinIO - Object Storage
@@ -446,7 +446,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2014,
     language: "Go",
     features: ["object-storage", "data-storage"],
-    icon: "HardDrive",
+    icon: "https://min.io/resources/img/logo.svg",
   },
   
   // Kibana - Data Visualization
@@ -460,7 +460,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2011,
     language: "TypeScript",
     features: ["dashboard", "visualization", "analytics", "search"],
-    icon: "BarChart",
+    icon: "https://cdn.simpleicons.org/kibana",
   },
   
   // Metabase - Business Intelligence
@@ -474,7 +474,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2015,
     language: "Clojure",
     features: ["dashboard", "visualization", "analytics", "business-intelligence", "reporting"],
-    icon: "PieChart",
+    icon: "https://www.metabase.com/images/logo.svg",
   },
   
   // Superset - Data Exploration
@@ -488,7 +488,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2015,
     language: "Python",
     features: ["dashboard", "visualization", "analytics", "business-intelligence"],
-    icon: "LineChart",
+    icon: "https://superset.apache.org/img/superset-logo-horiz-apache.svg",
   },
   
   // Logstash - Data Processing Pipeline
@@ -502,7 +502,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2009,
     language: "Ruby",
     features: ["log-collection", "data-pipeline", "etl", "data-integration"],
-    icon: "Layers",
+    icon: "https://cdn.simpleicons.org/logstash",
   },
   
   // Fluentd - Unified Logging Layer
@@ -516,7 +516,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2011,
     language: "Ruby",
     features: ["log-collection", "data-pipeline", "data-integration"],
-    icon: "Filter",
+    icon: "https://www.fluentd.org/assets/img/miscellany/fluentd-logo.png",
   },
   
   // Apache Airflow - Workflow Orchestration
@@ -530,7 +530,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2014,
     language: "Python",
     features: ["scheduling", "data-pipeline", "etl", "workflow-engine", "automation"],
-    icon: "Calendar",
+    icon: "https://airflow.apache.org/images/feature-image.png",
   },
   
   // LangChain - LLM Application Framework
@@ -544,7 +544,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2022,
     language: "Python",
     features: ["llm-integration", "rag", "ai-assistant", "chatbot"],
-    icon: "BrainCircuit",
+    icon: "https://python.langchain.com/img/brand/wordmark.png",
   },
   
   // LlamaIndex - Data Framework for LLM
@@ -558,7 +558,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2022,
     language: "Python",
     features: ["llm-integration", "rag", "knowledge-base", "embedding"],
-    icon: "BookOpen",
+    icon: "https://www.llamaindex.ai/favicon.ico",
   },
   
   // Rasa - Conversational AI
@@ -572,7 +572,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2016,
     language: "Python",
     features: ["chatbot", "ai-assistant", "llm-integration"],
-    icon: "MessageCircle",
+    icon: "https://rasa.com/static/rasa-logo-2dfe4ed20a.svg",
   },
   
   // Jenkins - CI/CD Automation
@@ -586,7 +586,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2011,
     language: "Java",
     features: ["ci-cd", "automation", "workflow-automation"],
-    icon: "GitBranch",
+    icon: "https://cdn.simpleicons.org/jenkins",
   },
   
   // GitLab - DevOps Platform
@@ -600,7 +600,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2011,
     language: "Ruby",
     features: ["ci-cd", "automation", "gitops", "api-integration"],
-    icon: "GitMerge",
+    icon: "https://cdn.simpleicons.org/gitlab",
   },
   
   // Argo CD - GitOps Continuous Delivery
@@ -614,6 +614,6 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2018,
     language: "Go",
     features: ["gitops", "ci-cd", "automation"],
-    icon: "GitPullRequest",
+    icon: "https://argo-cd.readthedocs.io/en/stable/assets/logo.png",
   },
 ];
