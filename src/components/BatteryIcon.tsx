@@ -1,9 +1,21 @@
+"use client";
+
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Check, X } from "lucide-react";
+
 interface BatteryIconProps {
   percentage: number; // 0-100
   className?: string;
+  requiredFeatures?: string[];
+  supportedFeatures?: string[];
 }
 
-export function BatteryIcon({ percentage, className = "" }: BatteryIconProps) {
+export function BatteryIcon({
+  percentage,
+  className = "",
+  requiredFeatures = [],
+  supportedFeatures = []
+}: BatteryIconProps) {
   // 퍼센트에 따른 그라데이션 색상 결정 (파스텔톤)
   const getGradient = (pct: number) => {
     if (pct >= 75) return "from-green-300 to-emerald-400"; // 파스텔 그린
@@ -24,7 +36,7 @@ export function BatteryIcon({ percentage, className = "" }: BatteryIconProps) {
   const textColor = getTextColor(percentage);
   const fillPercentage = Math.max(0, Math.min(100, percentage));
 
-  return (
+  const batteryContent = (
     <div className={`flex flex-col items-center gap-0.5 ${className}`}>
       {/* 배터리 아이콘 */}
       <div className="relative w-4 h-7 flex items-center justify-center">
@@ -44,5 +56,42 @@ export function BatteryIcon({ percentage, className = "" }: BatteryIconProps) {
         {percentage}%
       </span>
     </div>
+  );
+
+  // requiredFeatures가 없으면 tooltip 없이 반환
+  if (requiredFeatures.length === 0) {
+    return batteryContent;
+  }
+
+  return (
+    <TooltipProvider delayDuration={200}>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          {batteryContent}
+        </TooltipTrigger>
+        <TooltipContent side="left" className="max-w-xs">
+          <div className="text-xs">
+            <div className="font-semibold mb-2">Feature Match</div>
+            <div className="space-y-1">
+              {requiredFeatures.map((feature) => {
+                const isSupported = supportedFeatures.includes(feature);
+                return (
+                  <div key={feature} className="flex items-center gap-2">
+                    {isSupported ? (
+                      <Check className="h-3 w-3 text-green-500 flex-shrink-0" />
+                    ) : (
+                      <X className="h-3 w-3 text-red-500 flex-shrink-0" />
+                    )}
+                    <span className={isSupported ? "text-foreground" : "text-muted-foreground"}>
+                      {feature}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
   );
 }

@@ -121,7 +121,11 @@ export default function MappingPage() {
                                       {project.name}
                                     </div>
                                   </div>
-                                  <BatteryIcon percentage={matchScore} />
+                                  <BatteryIcon
+                                    percentage={matchScore}
+                                    requiredFeatures={module.requiredFeatures}
+                                    supportedFeatures={project.features}
+                                  />
                                 </a>
                               );
                             })}
