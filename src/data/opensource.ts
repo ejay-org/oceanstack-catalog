@@ -616,4 +616,326 @@ export const openSourceProjects: OpenSource[] = [
     features: ["gitops", "ci-cd", "automation"],
     icon: "https://argo-cd.readthedocs.io/en/stable/assets/logo.png",
   },
+  
+  // Prowler - Cloud Security Tool
+  {
+    id: "prowler",
+    name: "Prowler",
+    description: "AWS, Azure, GCP 보안 베스트 프랙티스 평가 도구",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/prowler-cloud/prowler",
+    stars: 10000,
+    startYear: 2016,
+    language: "Python",
+    features: ["vulnerability-scanning", "compliance", "cloud-security", "audit"],
+    icon: "https://raw.githubusercontent.com/prowler-cloud/prowler/master/docs/img/prowler-logo.png",
+  },
+  
+  // SigNoz - Observability Platform
+  {
+    id: "signoz",
+    name: "SigNoz",
+    description: "오픈소스 APM 및 관측성 플랫폼",
+    license: "MIT",
+    githubUrl: "https://github.com/SigNoz/signoz",
+    stars: 18000,
+    startYear: 2021,
+    language: "TypeScript",
+    features: ["metrics-collection", "trace-collection", "log-collection", "observability", "dashboard"],
+    icon: "https://signoz.io/img/SigNozLogo-orange.svg",
+  },
+  
+  // Umami - Web Analytics
+  {
+    id: "umami",
+    name: "Umami",
+    description: "프라이버시 중심 웹 분석 도구",
+    license: "MIT",
+    githubUrl: "https://github.com/umami-software/umami",
+    stars: 21000,
+    startYear: 2020,
+    language: "TypeScript",
+    features: ["analytics", "dashboard", "reporting"],
+    icon: "https://umami.is/images/umami-logo.svg",
+  },
+  
+  // iTop - ITSM & CMDB
+  {
+    id: "itop",
+    name: "iTop",
+    description: "IT 서비스 관리 및 CMDB 솔루션",
+    license: "AGPL-3.0",
+    githubUrl: "https://github.com/Combodo/iTop",
+    stars: 800,
+    startYear: 2010,
+    language: "PHP",
+    features: ["ticketing", "help-desk", "asset-tracking", "inventory-collection", "change-management"],
+    icon: "https://www.combodo.com/logos/logo-itop.svg",
+  },
+  
+  // Redmine - Project Management
+  {
+    id: "redmine",
+    name: "Redmine",
+    description: "웹 기반 프로젝트 관리 및 이슈 트래킹",
+    license: "GPL-2.0",
+    githubUrl: "https://github.com/redmine/redmine",
+    stars: 5200,
+    startYear: 2006,
+    language: "Ruby",
+    features: ["project-management", "ticketing", "workflow-engine"],
+    icon: "https://www.redmine.org/attachments/3462/redmine_fluid_icon.png",
+  },
+  
+  // CloudQuery - Cloud Asset Inventory
+  {
+    id: "cloudquery",
+    name: "CloudQuery",
+    description: "클라우드 자산 인벤토리 및 보안 정책 도구",
+    license: "MPL-2.0",
+    githubUrl: "https://github.com/cloudquery/cloudquery",
+    stars: 5800,
+    startYear: 2021,
+    language: "Go",
+    features: ["inventory-collection", "asset-tracking", "compliance", "data-integration"],
+    icon: "https://www.cloudquery.io/logo-light.svg",
+  },
+  
+  // ManageIQ - Cloud Management Platform
+  {
+    id: "manageiq",
+    name: "ManageIQ",
+    description: "하이브리드 IT 관리 플랫폼",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/ManageIQ/manageiq",
+    stars: 1400,
+    startYear: 2014,
+    language: "Ruby",
+    features: ["orchestration", "automation", "inventory-collection", "cost-tracking"],
+    icon: "https://www.manageiq.org/assets/images/logo-manageiq.svg",
+  },
+  
+  // Fix Inventory - Cloud Asset Inventory
+  {
+    id: "fixinventory",
+    name: "Fix Inventory",
+    description: "멀티 클라우드 자산 인벤토리 및 검색",
+    license: "AGPL-3.0",
+    githubUrl: "https://github.com/someengineering/fixinventory",
+    stars: 1600,
+    startYear: 2020,
+    language: "Python",
+    features: ["inventory-collection", "asset-tracking", "search", "cloud-security"],
+    icon: "https://fix.security/img/fixinventory-logo.svg",
+  },
+  
+  // Corteza - Low-Code Platform
+  {
+    id: "corteza",
+    name: "Corteza",
+    description: "오픈소스 Low-Code 개발 플랫폼",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/cortezaproject/corteza",
+    stars: 1500,
+    startYear: 2019,
+    language: "Go",
+    features: ["workflow-engine", "workflow-automation", "bpm"],
+    icon: "https://cortezaproject.org/logo.svg",
+  },
+  
+  // Casdoor - Authentication Platform
+  {
+    id: "casdoor",
+    name: "Casdoor",
+    description: "UI 우선 인증 및 SSO 플랫폼",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/casdoor/casdoor",
+    stars: 9800,
+    startYear: 2020,
+    language: "Go",
+    features: ["authentication", "authorization", "access-control", "sso"],
+    icon: "https://cdn.casbin.org/img/casdoor-logo_1185x256.png",
+  },
+  
+  // Backstage - Developer Portal
+  {
+    id: "backstage",
+    name: "Backstage",
+    description: "개발자 포털 및 서비스 카탈로그",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/backstage/backstage",
+    stars: 28000,
+    startYear: 2020,
+    language: "TypeScript",
+    features: ["inventory-collection", "api-integration", "dashboard"],
+    icon: "https://backstage.io/img/logo.svg",
+  },
+  
+  // VictoriaMetrics - Time Series Database
+  {
+    id: "victoriametrics",
+    name: "VictoriaMetrics",
+    description: "고성능 시계열 데이터베이스 및 모니터링",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/VictoriaMetrics/VictoriaMetrics",
+    stars: 12000,
+    startYear: 2018,
+    language: "Go",
+    features: ["time-series-db", "metrics-collection", "performance-monitoring"],
+    icon: "https://docs.victoriametrics.com/logo.png",
+  },
+  
+  // Thanos - Prometheus High Availability
+  {
+    id: "thanos",
+    name: "Thanos",
+    description: "Prometheus 고가용성 및 장기 저장 솔루션",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/thanos-io/thanos",
+    stars: 13000,
+    startYear: 2017,
+    language: "Go",
+    features: ["time-series-db", "metrics-collection", "data-storage"],
+    icon: "https://thanos.io/tip/img/Thanos-logo_fullmedium.svg",
+  },
+  
+  // ClickHouse - Analytics Database
+  {
+    id: "clickhouse",
+    name: "ClickHouse",
+    description: "고속 컬럼 지향 분석 데이터베이스",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/ClickHouse/ClickHouse",
+    stars: 37000,
+    startYear: 2016,
+    language: "C++",
+    features: ["data-storage", "analytics", "time-series-db", "data-integration"],
+    icon: "https://clickhouse.com/docs/assets/images/logo.svg",
+  },
+  
+  // Loki - Log Aggregation
+  {
+    id: "loki",
+    name: "Grafana Loki",
+    description: "Prometheus에서 영감을 받은 로그 집계 시스템",
+    license: "AGPL-3.0",
+    githubUrl: "https://github.com/grafana/loki",
+    stars: 23000,
+    startYear: 2018,
+    language: "Go",
+    features: ["log-collection", "data-storage", "search"],
+    icon: "https://grafana.com/static/img/logos/logo-loki.svg",
+  },
+  
+  // Tempo - Distributed Tracing
+  {
+    id: "tempo",
+    name: "Grafana Tempo",
+    description: "고속 분산 추적 백엔드",
+    license: "AGPL-3.0",
+    githubUrl: "https://github.com/grafana/tempo",
+    stars: 4000,
+    startYear: 2020,
+    language: "Go",
+    features: ["trace-collection", "observability", "data-storage"],
+    icon: "https://grafana.com/static/img/logos/logo-tempo.svg",
+  },
+  
+  // OpenSearch - Search and Analytics
+  {
+    id: "opensearch",
+    name: "OpenSearch",
+    description: "커뮤니티 기반 검색 및 분석 엔진",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/opensearch-project/OpenSearch",
+    stars: 9000,
+    startYear: 2021,
+    language: "Java",
+    features: ["search", "data-storage", "analytics", "log-collection"],
+    icon: "https://opensearch.org/assets/brand/SVG/Logo/opensearch_logo_default.svg",
+  },
+  
+  // Steampipe - Cloud Query Tool
+  {
+    id: "steampipe",
+    name: "Steampipe",
+    description: "SQL로 클라우드 인프라 쿼리",
+    license: "AGPL-3.0",
+    githubUrl: "https://github.com/turbot/steampipe",
+    stars: 6800,
+    startYear: 2020,
+    language: "Go",
+    features: ["inventory-collection", "search", "compliance", "data-integration"],
+    icon: "https://steampipe.io/images/steampipe-logo-color.svg",
+  },
+  
+  // Wazuh - Security Monitoring
+  {
+    id: "wazuh",
+    name: "Wazuh",
+    description: "통합 XDR 및 SIEM 보안 플랫폼",
+    license: "GPL-2.0",
+    githubUrl: "https://github.com/wazuh/wazuh",
+    stars: 10000,
+    startYear: 2015,
+    language: "C",
+    features: ["vulnerability-scanning", "log-collection", "event-monitoring", "compliance"],
+    icon: "https://wazuh.com/uploads/2022/05/Logo-blogpost.png",
+  },
+  
+  // driftctl - IaC Drift Detection
+  {
+    id: "driftctl",
+    name: "driftctl",
+    description: "인프라 코드 드리프트 감지 도구",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/snyk/driftctl",
+    stars: 2400,
+    startYear: 2020,
+    language: "Go",
+    features: ["infrastructure-as-code", "compliance", "inventory-collection"],
+    icon: "https://driftctl.com/logo.svg",
+  },
+  
+  // AWX - Ansible Tower Open Source
+  {
+    id: "awx",
+    name: "AWX",
+    description: "Ansible Tower 오픈소스 버전",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/ansible/awx",
+    stars: 14000,
+    startYear: 2017,
+    language: "Python",
+    features: ["automation", "orchestration", "configuration-management", "workflow-engine"],
+    icon: "https://raw.githubusercontent.com/ansible/awx-logos/master/awx/ui/client/assets/logo-header.svg",
+  },
+  
+  // Kill Bill - Billing Platform
+  {
+    id: "killbill",
+    name: "Kill Bill",
+    description: "오픈소스 청구 및 결제 플랫폼",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/killbill/killbill",
+    stars: 4700,
+    startYear: 2010,
+    language: "Java",
+    features: ["contract-management", "sla-management", "erp"],
+    icon: "https://killbill.io/img/logo.svg",
+  },
+  
+  // Perses - Observability Dashboards
+  {
+    id: "perses",
+    name: "Perses",
+    description: "관측성 대시보드 및 시각화 도구",
+    license: "Apache-2.0",
+    githubUrl: "https://github.com/perses/perses",
+    stars: 1200,
+    startYear: 2022,
+    language: "Go",
+    features: ["dashboard", "visualization", "observability"],
+    icon: "https://raw.githubusercontent.com/perses/perses/main/docs/logo.png",
+  },
 ];
