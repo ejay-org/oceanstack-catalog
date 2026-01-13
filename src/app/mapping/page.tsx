@@ -4,23 +4,9 @@ import { modules } from "@/data/modules";
 import { openSourceProjects } from "@/data/opensource";
 import { getOpenSourceForModule, getMatchScore } from "@/lib/mapping";
 import { BatteryIcon } from "@/components/BatteryIcon";
-import * as LucideIcons from "lucide-react";
-import { LucideIcon } from "lucide-react";
+import { ProjectIconImage } from "@/components/ProjectIconImage";
 
 export default function MappingPage() {
-  // 아이콘이 URL인지 확인
-  const isIconUrl = (icon?: string): boolean => {
-    if (!icon) return false;
-    return icon.startsWith('http://') || icon.startsWith('https://') || icon.startsWith('/');
-  };
-
-  // 동적으로 아이콘 가져오기
-  const getIcon = (iconName?: string): LucideIcon => {
-    if (!iconName || isIconUrl(iconName)) return LucideIcons.Box;
-    const Icon = (LucideIcons as any)[iconName];
-    return Icon || LucideIcons.Box;
-  };
-
   return (
     <div className="min-h-screen bg-background">
       {/* 헤더 */}
@@ -109,9 +95,10 @@ export default function MappingPage() {
                         {supportingProjects.length > 0 ? (
                           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
                             {supportingProjects.map((project) => {
-                              const ProjectIcon = getIcon(project.icon);
-                              const iconUrl = isIconUrl(project.icon) ? project.icon : null;
                               const matchScore = getMatchScore(project, module);
+                              const iconUrl = project.icon?.startsWith('http://') || project.icon?.startsWith('https://') || project.icon?.startsWith('/')
+                                ? project.icon
+                                : null;
 
                               return (
                                 <a
@@ -122,15 +109,12 @@ export default function MappingPage() {
                                   className="flex items-center gap-2 p-2 border rounded-lg bg-accent/30 hover:bg-accent transition-colors group"
                                 >
                                   <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
-                                    {iconUrl ? (
-                                      <img
-                                        src={iconUrl}
-                                        alt={project.name}
-                                        className="w-5 h-5 object-contain"
-                                      />
-                                    ) : (
-                                      <ProjectIcon className="h-4 w-4 text-primary" />
-                                    )}
+                                    <ProjectIconImage
+                                      iconUrl={iconUrl}
+                                      iconName={project.icon}
+                                      projectName={project.name}
+                                      size="sm"
+                                    />
                                   </div>
                                   <div className="flex-1 min-w-0">
                                     <div className="text-sm font-medium truncate group-hover:text-primary">

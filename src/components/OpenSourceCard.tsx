@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { OpenSource } from "@/types";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,6 +12,8 @@ interface OpenSourceCardProps {
 }
 
 export function OpenSourceCard({ project }: OpenSourceCardProps) {
+  const [imageError, setImageError] = useState(false);
+
   // 아이콘이 URL인지 확인
   const isIconUrl = (icon?: string): boolean => {
     if (!icon) return false;
@@ -32,11 +37,12 @@ export function OpenSourceCard({ project }: OpenSourceCardProps) {
           {/* 솔루션 아이콘 */}
           <div className="flex-shrink-0">
             <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden">
-              {iconUrl ? (
+              {iconUrl && !imageError ? (
                 <img
                   src={iconUrl}
                   alt={project.name}
                   className="w-6 h-6 object-contain"
+                  onError={() => setImageError(true)}
                 />
               ) : (
                 <ProjectIcon className="h-5 w-5 text-primary" />

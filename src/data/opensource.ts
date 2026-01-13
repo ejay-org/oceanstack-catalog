@@ -12,7 +12,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2016,
     language: "Python",
     features: ["ipam", "dcim", "asset-tracking", "inventory-collection", "topology-visualization"],
-    icon: "https://raw.githubusercontent.com/netbox-community/netbox/develop/docs/netbox_logo.svg",
+    icon: "https://avatars.githubusercontent.com/u/19204781?s=200&v=4",
   },
   
   // Snipe-IT - Asset Management
@@ -26,7 +26,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2013,
     language: "PHP",
     features: ["asset-tracking", "inventory-collection"],
-    icon: "https://snipeitapp.com/img/logos/snipe-it-bug-black.svg",
+    icon: "https://avatars.githubusercontent.com/u/1627843?s=200&v=4",
   },
   
   // Ralph - Asset Management Platform
@@ -40,7 +40,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2010,
     language: "Python",
     features: ["dcim", "asset-tracking", "inventory-collection"],
-    icon: "https://raw.githubusercontent.com/allegro/ralph/ng/docs/img/ralph_logo.png",
+    icon: "https://avatars.githubusercontent.com/u/69074?s=200&v=4",
   },
   
   // RackTables - Data Center Asset Management
@@ -68,7 +68,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2009,
     language: "C",
     features: ["vulnerability-scanning"],
-    icon: "https://www.greenbone.net/typo3conf/ext/customertemplate/Resources/Public/Images/Greenbone_Logo.svg",
+    icon: "https://avatars.githubusercontent.com/u/4331496?s=200&v=4",
   },
   
   // Trivy - Container Security Scanner
@@ -124,7 +124,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2021,
     language: "Go",
     features: ["cost-tracking", "cost-analysis", "usage-monitoring"],
-    icon: "https://raw.githubusercontent.com/opencost/opencost/develop/docs/opencost-logo.png",
+    icon: "https://avatars.githubusercontent.com/u/88426588?s=200&v=4",
   },
   
   // Infracost - Infrastructure Cost Estimation
@@ -138,7 +138,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2020,
     language: "Go",
     features: ["cost-analysis", "optimization-recommendations", "budget-management"],
-    icon: "https://raw.githubusercontent.com/infracost/infracost/master/assets/logo.svg",
+    icon: "https://avatars.githubusercontent.com/u/67947399?s=200&v=4",
   },
   
   // Cloud Custodian - Cloud Governance
@@ -152,7 +152,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2016,
     language: "Python",
     features: ["cost-tracking", "optimization-recommendations", "automation"],
-    icon: "https://raw.githubusercontent.com/cloud-custodian/cloud-custodian/main/docs/logos/cloud-custodian.png",
+    icon: "https://avatars.githubusercontent.com/u/13251076?s=200&v=4",
   },
   
   // Prometheus - Monitoring System
@@ -194,7 +194,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2001,
     language: "C",
     features: ["metrics-collection", "performance-monitoring", "event-monitoring", "alerting"],
-    icon: "https://cdn.simpleicons.org/zabbix",
+    icon: "https://cdn.simpleicons.org/zabbix/CC0000",
   },
   
   // Jaeger - Distributed Tracing
@@ -208,7 +208,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2017,
     language: "Go",
     features: ["trace-collection", "observability", "performance-monitoring"],
-    icon: "https://www.jaegertracing.io/img/jaeger-icon-color.svg",
+    icon: "https://cdn.simpleicons.org/jaegertracing",
   },
   
   // OpenTelemetry - Observability Framework
@@ -264,7 +264,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2012,
     language: "Python",
     features: ["alerting", "alert-management", "notification-routing"],
-    icon: "https://alerta.io/en/latest/_static/images/alerta-logo.png",
+    icon: "https://avatars.githubusercontent.com/u/739550?s=200&v=4",
   },
   
   // Rundeck - Runbook Automation
@@ -278,7 +278,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2010,
     language: "Java",
     features: ["automation", "orchestration", "scheduling"],
-    icon: "https://www.rundeck.com/hubfs/Assets/Images/rundeck-icon-black-2022.svg",
+    icon: "https://avatars.githubusercontent.com/u/1138817?s=200&v=4",
   },
   
   // StackStorm - Event-Driven Automation
@@ -292,7 +292,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2014,
     language: "Python",
     features: ["automation", "orchestration", "auto-remediation"],
-    icon: "https://raw.githubusercontent.com/StackStorm/st2/master/st2client/st2client/logo.png",
+    icon: "https://avatars.githubusercontent.com/u/4969009?s=200&v=4",
   },
   
   // Ansible - Configuration Management
@@ -334,7 +334,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2006,
     language: "PHP",
     features: ["ticketing", "help-desk", "customer-feedback"],
-    icon: "https://osticket.com/sites/default/files/osTicket.png",
+    icon: "https://avatars.githubusercontent.com/u/39577748?s=200&v=4",
   },
   
   // GLPI - IT Asset Management & Help Desk
@@ -362,7 +362,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2012,
     language: "Ruby",
     features: ["ticketing", "help-desk", "customer-feedback"],
-    icon: "https://zammad.com/media/pages/product/features/integrations/a9ec4b4e07-1706881714/zammad-logo-header.svg",
+    icon: "https://avatars.githubusercontent.com/u/7482834?s=200&v=4",
   },
   
   // Camunda - Workflow Engine
@@ -390,7 +390,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2019,
     language: "TypeScript",
     features: ["workflow-engine", "automation", "api-integration", "workflow-automation"],
-    icon: "https://n8n.io/favicon.svg",
+    icon: "https://cdn.simpleicons.org/n8n/EA4B71",
   },
   
   // Odoo - ERP & CRM
@@ -418,7 +418,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2008,
     language: "Python",
     features: ["erp", "contract-management", "project-management", "sla-management"],
-    icon: "https://erpnext.com/files/erpnext-logo.svg",
+    icon: "https://avatars.githubusercontent.com/u/5955440?s=200&v=4",
   },
   
   // Elasticsearch - Search & Analytics Engine
@@ -446,7 +446,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2014,
     language: "Go",
     features: ["object-storage", "data-storage"],
-    icon: "https://min.io/resources/img/logo.svg",
+    icon: "https://cdn.simpleicons.org/minio/C72E49",
   },
   
   // Kibana - Data Visualization
@@ -474,7 +474,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2015,
     language: "Clojure",
     features: ["dashboard", "visualization", "analytics", "business-intelligence", "reporting"],
-    icon: "https://www.metabase.com/images/logo.svg",
+    icon: "https://cdn.simpleicons.org/metabase/509EE3",
   },
   
   // Superset - Data Exploration
@@ -516,7 +516,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2011,
     language: "Ruby",
     features: ["log-collection", "data-pipeline", "data-integration"],
-    icon: "https://www.fluentd.org/assets/img/miscellany/fluentd-logo.png",
+    icon: "https://cdn.simpleicons.org/fluentd/0E83C8",
   },
   
   // Apache Airflow - Workflow Orchestration
@@ -572,7 +572,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2016,
     language: "Python",
     features: ["chatbot", "ai-assistant", "llm-integration"],
-    icon: "https://rasa.com/static/rasa-logo-2dfe4ed20a.svg",
+    icon: "https://avatars.githubusercontent.com/u/23622794?s=200&v=4",
   },
   
   // Jenkins - CI/CD Automation
@@ -628,7 +628,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2016,
     language: "Python",
     features: ["vulnerability-scanning", "compliance", "cloud-security", "audit"],
-    icon: "https://raw.githubusercontent.com/prowler-cloud/prowler/master/docs/img/prowler-logo.png",
+    icon: "https://avatars.githubusercontent.com/u/38939016?s=200&v=4",
   },
   
   // SigNoz - Observability Platform
@@ -656,7 +656,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2020,
     language: "TypeScript",
     features: ["analytics", "dashboard", "reporting"],
-    icon: "https://umami.is/images/umami-logo.svg",
+    icon: "https://raw.githubusercontent.com/umami-software/umami/master/public/logo.svg",
   },
   
   // iTop - ITSM & CMDB
@@ -670,7 +670,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2010,
     language: "PHP",
     features: ["ticketing", "help-desk", "asset-tracking", "inventory-collection", "change-management"],
-    icon: "https://www.combodo.com/logos/logo-itop.svg",
+    icon: "https://avatars.githubusercontent.com/u/38463?s=200&v=4",
   },
   
   // Redmine - Project Management
@@ -698,7 +698,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2021,
     language: "Go",
     features: ["inventory-collection", "asset-tracking", "compliance", "data-integration"],
-    icon: "https://www.cloudquery.io/logo-light.svg",
+    icon: "https://avatars.githubusercontent.com/u/83124797?s=200&v=4",
   },
   
   // ManageIQ - Cloud Management Platform
@@ -712,7 +712,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2014,
     language: "Ruby",
     features: ["orchestration", "automation", "inventory-collection", "cost-tracking"],
-    icon: "https://www.manageiq.org/assets/images/logo-manageiq.svg",
+    icon: "https://avatars.githubusercontent.com/u/10320658?s=200&v=4",
   },
   
   // Fix Inventory - Cloud Asset Inventory
@@ -740,7 +740,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2019,
     language: "Go",
     features: ["workflow-engine", "workflow-automation", "bpm"],
-    icon: "https://cortezaproject.org/logo.svg",
+    icon: "https://avatars.githubusercontent.com/u/38892485?s=200&v=4",
   },
   
   // Casdoor - Authentication Platform
@@ -782,7 +782,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2018,
     language: "Go",
     features: ["time-series-db", "metrics-collection", "performance-monitoring"],
-    icon: "https://docs.victoriametrics.com/logo.png",
+    icon: "https://avatars.githubusercontent.com/u/43720803?s=200&v=4",
   },
   
   // Thanos - Prometheus High Availability
@@ -796,7 +796,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2017,
     language: "Go",
     features: ["time-series-db", "metrics-collection", "data-storage"],
-    icon: "https://thanos.io/tip/img/Thanos-logo_fullmedium.svg",
+    icon: "https://avatars.githubusercontent.com/u/39082111?s=200&v=4",
   },
   
   // ClickHouse - Analytics Database
@@ -810,7 +810,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2016,
     language: "C++",
     features: ["data-storage", "analytics", "time-series-db", "data-integration"],
-    icon: "https://clickhouse.com/docs/assets/images/logo.svg",
+    icon: "https://cdn.simpleicons.org/clickhouse/FFCC01",
   },
   
   // Loki - Log Aggregation
@@ -838,7 +838,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2020,
     language: "Go",
     features: ["trace-collection", "observability", "data-storage"],
-    icon: "https://grafana.com/static/img/logos/logo-tempo.svg",
+    icon: "https://cdn.simpleicons.org/grafana/F46800",
   },
   
   // OpenSearch - Search and Analytics
@@ -866,7 +866,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2020,
     language: "Go",
     features: ["inventory-collection", "search", "compliance", "data-integration"],
-    icon: "https://steampipe.io/images/steampipe-logo-color.svg",
+    icon: "https://avatars.githubusercontent.com/u/76922505?s=200&v=4",
   },
   
   // Wazuh - Security Monitoring
@@ -894,7 +894,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2020,
     language: "Go",
     features: ["infrastructure-as-code", "compliance", "inventory-collection"],
-    icon: "https://driftctl.com/logo.svg",
+    icon: "https://avatars.githubusercontent.com/u/61034823?s=200&v=4",
   },
   
   // AWX - Ansible Tower Open Source
@@ -922,7 +922,7 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2010,
     language: "Java",
     features: ["contract-management", "sla-management", "erp"],
-    icon: "https://killbill.io/img/logo.svg",
+    icon: "https://avatars.githubusercontent.com/u/3430024?s=200&v=4",
   },
   
   // Perses - Observability Dashboards
@@ -936,6 +936,6 @@ export const openSourceProjects: OpenSource[] = [
     startYear: 2022,
     language: "Go",
     features: ["dashboard", "visualization", "observability"],
-    icon: "https://raw.githubusercontent.com/perses/perses/main/docs/logo.png",
+    icon: "https://avatars.githubusercontent.com/u/87857656?s=200&v=4",
   },
 ];
