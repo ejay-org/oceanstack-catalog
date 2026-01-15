@@ -4,6 +4,7 @@ import { useState } from "react";
 import { OpenSource } from "@/types";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { isIconUrl } from "@/lib/utils";
 import * as LucideIcons from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
@@ -14,16 +15,10 @@ interface OpenSourceCardProps {
 export function OpenSourceCard({ project }: OpenSourceCardProps) {
   const [imageError, setImageError] = useState(false);
 
-  // 아이콘이 URL인지 확인
-  const isIconUrl = (icon?: string): boolean => {
-    if (!icon) return false;
-    return icon.startsWith('http://') || icon.startsWith('https://') || icon.startsWith('/');
-  };
-
   // 동적으로 아이콘 가져오기
   const getIcon = (iconName?: string): LucideIcon => {
     if (!iconName || isIconUrl(iconName)) return LucideIcons.Box;
-    const Icon = (LucideIcons as any)[iconName];
+    const Icon = LucideIcons[iconName as keyof typeof LucideIcons] as LucideIcon;
     return Icon || LucideIcons.Box;
   };
 

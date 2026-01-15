@@ -22,7 +22,7 @@ export function ProjectIconImage({
   // 동적으로 아이콘 가져오기
   const getIcon = (name?: string): LucideIcon => {
     if (!name) return LucideIcons.Box;
-    const Icon = (LucideIcons as any)[name];
+    const Icon = LucideIcons[name as keyof typeof LucideIcons] as LucideIcon;
     return Icon || LucideIcons.Box;
   };
 
