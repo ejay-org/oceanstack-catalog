@@ -3,6 +3,7 @@ import { categories } from "@/data/categories";
 import { modules } from "@/data/modules";
 import { openSourceProjects } from "@/data/opensource";
 import { getOpenSourceForModule, getMatchScore } from "@/lib/mapping";
+import { isIconUrl } from "@/lib/utils";
 import { BatteryIcon } from "@/components/BatteryIcon";
 import { ProjectIconImage } from "@/components/ProjectIconImage";
 
@@ -96,9 +97,7 @@ export default function MappingPage() {
                           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
                             {supportingProjects.map((project) => {
                               const matchScore = getMatchScore(project, module);
-                              const iconUrl = project.icon?.startsWith('http://') || project.icon?.startsWith('https://') || project.icon?.startsWith('/')
-                                ? project.icon
-                                : null;
+                              const iconUrl = isIconUrl(project.icon) && project.icon ? project.icon : null;
 
                               return (
                                 <a
